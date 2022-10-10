@@ -6,7 +6,7 @@ public enum Desempenho {
 	A_DESEJAR {
 		@Override
 		public BigDecimal percentualReajuste() {
-			
+
 			return new BigDecimal("0.03");
 		}
 	},
@@ -22,14 +22,14 @@ public enum Desempenho {
 			return new BigDecimal("0.2");
 		}
 	},
-	
+
 	ESPETACULAR {
 		@Override
 		public BigDecimal percentualReajuste() {
 			return new BigDecimal("0.4");
 		}
 	};
-	
+
 	public abstract BigDecimal percentualReajuste();
 
 }
